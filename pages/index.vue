@@ -62,7 +62,18 @@
         </div>
       </div>
       <div id="right-column">
-        right column
+        <div id="right-column-content">
+          <div id="experience">
+            <div class="dot dot-active" />
+            <h2>work experience</h2>
+            <div class="experience-item">
+              <div class="dot" />
+              <p class="jobtitle">
+                Lead Javascript developer
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -78,77 +89,10 @@ export default {
 <style lang="scss">
 @import '../assets/scss/main.scss';
 
-body {
-  margin: 0px;
-}
-.container {
-  /* margin: 0 auto; */
-  /* min-height: 100vh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  /* margin-top: -50px; */
-}
-
-.header {
-  background: url(/mountains.jpg);
-  background-size: 100%;
-  background-position: center 30%;
-  width: 100%;
-  min-height: 300px;
-  margin-top: 0px;
-  color: #fff;
-}
-
-#overlay {
-  height: 100%;
-  position: absolute;
-  z-index: 10;
-  background-color: $dark-text-color;
-  width: 100%;
-  height: 300px;
-  opacity: 0.5;
-}
-
-#developer-info {
-  left: 15vw;
-  position: absolute;
-  display: grid;
-  grid-gap: 20px;
-  margin-top: 320px;
-  justify-items: left;
-  grid-template-columns: 150px 450px;
-  z-index: 15;
-}
-
-.name-header {
-  grid-column: 2;
-  transform: translateY(4px);
-  font-size: 4rem;
-  font-weight: 700;
-}
-.developer {
-  grid-column: 2;
-  transform: translateY(-79px);
-  color: #0E4C6F;
-  font-weight: 500;
-  font-size: 2rem;
-}
-
-.header-avatar-frame {
-  height: 150px;
-  width: 150px;
-  border: 1px solid #fff;
-  background-color: #666;
-  border-radius: 50%;
-  /* box-shadow: 4px 4px 4px rgba(0,0,0, 0.2); */
-}
-
 .contact-method {
   display: grid;
   grid-gap: 50px;
-  margin-top: 50px;
+  margin-top: 60px;
   grid-template-columns: 90px 200px;
   &__circle {
     width: 90px;
@@ -166,17 +110,20 @@ body {
 
 #section-1 {
   display: grid;
-  grid-template-columns:  4fr 6fr;
+  grid-template-columns:  3.5fr 6.5fr;
 }
 #left-column {
   background-color: $mid-gray;
-  height: 100vh;
+  height: 120vh;
 }
  #left-column-content {
-   margin-top: 330px;
+   margin-top: 362px;
    text-align: left;
    padding: 0 80px;
    border-right: solid 3px $dark-text-color;
+   h2 {
+     transform: translateY(-7px);
+   }
  }
  #excerpt {
    position: absolute;
@@ -194,6 +141,29 @@ body {
 #right-column {
   grid-column: 2;
   background-color: white;
-  height: 100vh;
+  height: 120vh;
+  &-content {
+    padding: 0 80px;
+    margin-top: 330px;
+  }
+
+  #experience {
+    .experience-item {
+      margin-top: 55px;
+    }
+    .dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: white;
+      border: 4px solid $dark-text-color;
+      transform: translate(-91px, 31px);
+      display: inline-block;
+      &-active {
+        background-color: $highlight-text-color;
+        border: 4px solid $highlight-text-color;
+      }
+    }
+  }
 }
 </style>
