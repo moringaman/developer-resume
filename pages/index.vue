@@ -71,6 +71,27 @@
               <p class="jobtitle">
                 Lead Javascript developer
               </p>
+              <p>
+                Webnostix Design & Development Services
+              </p>
+            </div>
+            <div class="experience-item">
+              <div class="dot" />
+              <p class="jobtitle">
+                Lead Javascript developer
+              </p>
+              <p>
+                Webnostix Design & Development Services
+              </p>
+            </div>
+            <div class="experience-item">
+              <div class="dot" />
+              <p class="jobtitle">
+                Lead Javascript developer
+              </p>
+              <p>
+                Webnostix Design & Development Services
+              </p>
             </div>
           </div>
         </div>
@@ -89,6 +110,9 @@ export default {
 <style lang="scss">
 @import '../assets/scss/main.scss';
 
+#contact>h1 {
+  margin-bottom: 20px;
+}
 .contact-method {
   display: grid;
   grid-gap: 50px;
