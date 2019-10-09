@@ -55,7 +55,8 @@
   position: absolute;
   display: grid;
   grid-gap: 20px;
-  margin-top: 20rem;
+  // margin-top: 20rem;
+  transform: translateY(320px);
   justify-items: left;
   grid-template-columns: 150px 550px;
   z-index: 15;
@@ -81,6 +82,9 @@
   border: 1px solid #fff;
   background-color: #666;
   border-radius: 50%;
+  background: url(/avatar.jpg);
+  background-size: 120%;
+  background-position: 25% 31%;
   /* box-shadow: 4px 4px 4px rgba(0,0,0, 0.2); */
 }
 </style>
