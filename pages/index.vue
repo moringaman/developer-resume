@@ -78,19 +78,28 @@
             <div class="experience-item">
               <div class="dot" />
               <p class="jobtitle">
-                Lead Javascript developer
+                Webmaster & Web designer
               </p>
               <p>
-                Webnostix Design & Development Services
+                The MoringaMutual Trust / Wildmans Herbs
               </p>
             </div>
             <div class="experience-item">
               <div class="dot" />
               <p class="jobtitle">
-                Lead Javascript developer
+                Network Administrator
               </p>
               <p>
-                Webnostix Design & Development Services
+                Meltwater
+              </p>
+            </div>
+            <div class="experience-item">
+              <div class="dot" />
+              <p class="jobtitle">
+                Software Packager / Desktop Specialist
+              </p>
+              <p>
+                Sony Entertainment
               </p>
             </div>
           </div>
@@ -135,9 +144,13 @@ export default {
 #section-1 {
   display: grid;
   grid-template-columns:  3.5fr 6.5fr;
+  // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  }
 }
 #left-column {
-  background-color: $mid-gray;
+  background-color: $light-gray;
   height: 120vh;
 }
  #left-column-content {
@@ -163,9 +176,10 @@ export default {
  }
 
 #right-column {
-  grid-column: 2;
+  // grid-column: 3;
   background-color: white;
   height: 120vh;
+  width: 100%;
   &-content {
     padding: 0 80px;
     margin-top: 330px;
