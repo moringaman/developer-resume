@@ -37,7 +37,12 @@ p, .date {
   color: $light-text-color;
 }
 
-.jobtitle {
+.company {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.jobtitle, .qualification {
   font-weight: 600;
   font-size: 1.2rem;
   color: $highlight-text-color;

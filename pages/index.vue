@@ -59,6 +59,30 @@
               </div>
             </div>
           </div>
+          <div id="education">
+            <h2>Education</h2>
+            <div class="education-venue">
+              <h3 class="qualification">
+                Degree
+              </h3>
+              <h3>
+                Business Economics (Bsc)
+              </h3>
+              <p>Thames Valley University (1993 - 1996)</p>
+            </div>
+            <div class="education-venue">
+              <h3 class="qualification">
+                A levels
+              </h3>
+              <h3>
+                French, History, Economics
+              </h3>
+              <p>Richard Huish College (Taunton)</p>
+            </div>
+          </div>
+          <div id="projects">
+            <h2>Projects</h2>
+          </div>
         </div>
       </div>
       <div id="right-column">
@@ -71,8 +95,16 @@
               <p class="jobtitle">
                 Lead Javascript developer
               </p>
-              <p>
+              <p class="company">
                 Webnostix Design & Development Services
+              </p>
+              <p>
+                <span style="font-weight: bold">
+                  Responsibilites:
+                </span>
+                Design & Development of corporate identity and websites for clients,
+                consulting on website functionality & UX, Coding and deployment of backend API's
+                as well as front end websites.
               </p>
             </div>
             <div class="experience-item">
@@ -80,8 +112,16 @@
               <p class="jobtitle">
                 Webmaster & Web designer
               </p>
-              <p>
+              <p class="company">
                 The MoringaMutual Trust / Wildmans Herbs
+              </p>
+              <p>
+                <span style="font-weight: bold">
+                  Responsibilites:
+                </span>
+                DesignDevelopment of corporate identity and websites for clients,
+                consulting on website functionality & UX, Coding and deployment of backend API's
+                as well as front end websites.
               </p>
             </div>
             <div class="experience-item">
@@ -89,8 +129,16 @@
               <p class="jobtitle">
                 Network Administrator
               </p>
-              <p>
+              <p class="company">
                 Meltwater
+              </p>
+              <p>
+                <span style="font-weight: bold">
+                  Responsibilites:
+                </span>
+                DesignDevelopment of corporate identity and websites for clients,
+                consulting on website functionality & UX, Coding and deployment of backend API's
+                as well as front end websites.
               </p>
             </div>
             <div class="experience-item">
@@ -98,8 +146,16 @@
               <p class="jobtitle">
                 Software Packager / Desktop Specialist
               </p>
-              <p>
+              <p class="company">
                 Sony Entertainment
+              </p>
+              <p>
+                <span style="font-weight: bold">
+                  Responsibilites
+                </span>
+                DesignDevelopment of corporate identity and websites for clients,
+                consulting on website functionality & UX, Coding and deployment of backend API's
+                as well as front end websites.
               </p>
             </div>
           </div>
@@ -119,8 +175,8 @@ export default {
 <style lang="scss">
 @import '../assets/scss/main.scss';
 
-#contact>h1 {
-  margin-bottom: 20px;
+#contact {
+  margin-bottom: 130px;
 }
 .contact-method {
   display: grid;
@@ -151,7 +207,7 @@ export default {
 }
 #left-column {
   background-color: $light-gray;
-  height: 120vh;
+  height: 1800px;
 }
  #left-column-content {
    margin-top: 362px;
@@ -178,7 +234,7 @@ export default {
 #right-column {
   // grid-column: 3;
   background-color: white;
-  height: 120vh;
+  height: 1800px;
   width: 100%;
   &-content {
     padding: 0 80px;
@@ -204,4 +260,11 @@ export default {
     }
   }
 }
+
+  #education {
+    height: 400px;
+    .education-venue {
+      margin-top: 50px;
+    }
+  }
 </style>
