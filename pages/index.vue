@@ -81,7 +81,7 @@
             </div>
           </div>
           <div id="projects">
-            <h2>Projects</h2>
+            <h2>skillset</h2>
           </div>
         </div>
       </div>
