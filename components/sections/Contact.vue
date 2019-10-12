@@ -1,0 +1,76 @@
+<template>
+  <div id="contact">
+    <h2>CONTACT</h2>
+    <div class="contact-method">
+      <div class="contact-method__circle">
+        A
+      </div>
+      <div class="contact-method__heading">
+        <h3>Address</h3>
+        <p>
+          8b Ringstead Rd<br>
+          Catford London<br>
+          SE6 2BP
+        </p>
+      </div>
+    </div>
+    <div class="contact-method">
+      <div class="contact-method__circle">
+        @
+      </div>
+      <div class="contact-method__heading">
+        <h3>Email</h3>
+        <p>
+          rob@webnostix.co.uk
+        </p>
+      </div>
+    </div>
+    <div class="contact-method">
+      <div class="contact-method__circle">
+        P
+      </div>
+      <div class="contact-method__heading">
+        <h3>Phone</h3>
+        <p>
+          +44 (0) 20 3005 9450
+        </p>
+      </div>
+    </div>
+    <div class="contact-method">
+      <div class="contact-method__circle">
+        W
+      </div>
+      <div class="contact-method__heading">
+        <h3>Website</h3>
+        <p>
+          www.robduffus.co.uk
+        </p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+@import '../../assets/scss/main.scss';
+#contact {
+  margin-bottom: 130px;
+}
+.contact-method {
+  display: grid;
+  grid-gap: 50px;
+  margin-top: 60px;
+  grid-template-columns: 90px 200px;
+  &__circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: $highlight-text-color;
+    color: white;
+    text-align: center;
+    line-height: 90px;
+    font-weight: 700;
+    font-size: 2rem;
+    // padding: auto auto;
+  }
+}
+</style>
