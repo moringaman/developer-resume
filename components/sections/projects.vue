@@ -1,15 +1,28 @@
 <template>
   <div id="project-work">
     <h2 id="project-work-title">
-      Projects
+      Recent Projects
     </h2>
     <div class="project-item">
-      <p>project 1</p>
+      <p class="skill-name">
+        Technologies
+      </p>
       <div class="project-item__right" />
       <div class="project-item__left">
+        <div class="project-item__left--tech">
+          <p
+            v-for="(tech, key) in projects[selected].tech"
+            :key="key"
+            class="skill-name"
+          >
+            {{ tech }}
+          </p>
+        </div>
         <div class="project-item__left--description" />
         <div class="project-item__left--frame" :style="{'background-image': 'url(/'+ projects[selected].thumb + ')'}">
-        <div class="project-item__left--frame-overlay">{{ projects[selected].desc }}</div>
+          <div class="project-item__left--frame-overlay">
+            {{ projects[selected].desc }}
+          </div>
           <!-- <img src="/scampz.png" alt=""> -->
         </div>
         <div class="project-item__left--list">
@@ -17,9 +30,12 @@
             <li
               v-for="(project, index) in projects"
               :key="index"
+              :class="{active: index == selected}"
               @click="selected = index"
             >
-             <p style="color: white"> {{ project.title }} </p>
+              <p style="color: white">
+                {{ project.title }}
+              </p>
             </li>
           </ul>
         </div>
@@ -36,9 +52,12 @@ export default {
   data () {
     return {
       projects: [
-        { title: 'Scampz music', url: 'http://scampz-music.herokuapp.com', thumb: 'scampz.png', desc: 'A progressive mobile app showcasing an artists music ' },
-        { title: 'Onset travel', url: 'http://onset-travel-client.herokuapp.com', thumb: 'onset.png', desc: 'A travel website with weather and qoute calculator' },
-        { title: 'CDN Desktop', url: 'http://cadence-desktop.com', thumb: 'scampz.png', desc: '' }
+        { title: 'CDN Desktop', url: 'http://cadence-desktop.com', thumb: 'cdndesktop.png', desc: 'A desktop app written in Vue and Electron', tech: [ 'html', 'javascript', 'vuejs', 'nodejs', 'electron', 'firebase', 'sass', 'couchdb' ] },
+        { title: 'Scampz music', url: 'http://scampz-music.herokuapp.com', thumb: 'scampz.png', desc: 'A progressive mobile app showcasing an artists music', tech: [ 'nuxtjs', 'sass', 'pwa' ] },
+        { title: 'Onset travel', url: 'http://onset-travel-client.herokuapp.com', thumb: 'onset.png', desc: 'A travel website with weather and qoute calculator', tech: [ 'vuejs', 'nodejs', 'sass', 'rest' ] },
+        { title: 'CDN-Desktop Website', url: 'http://cadence-desktop.com', thumb: 'scampz.png', desc: 'App support & sales Website with Stripe subscriptions', tech: [ 'nuxt', 'nodejs', 'sass', 'rest', 'firebase' ] },
+        { title: 'Video Commercial', url: 'http://cadence-desktop.com', thumb: 'scampz.png', desc: 'Promotional video & app showcase with voiceover', tech: ['video', 'voice', 'kdenlive', 'handbreak'] },
+        { title: 'Q-DSK Mobile', url: 'http://cadence-desktop.com', thumb: 'Q-DSK2.png', desc: 'A GeoApp made with Vuejs + Quasar + Cordova' }
       ],
       selected: 0
     }
@@ -73,27 +92,42 @@ export default {
         transform: translateY(-250px);
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: 1.5fr 1fr 2fr;
+        grid-template-columns: 2fr 0.8fr 2.4fr;
         grid-template-rows: 200px 50px;
         justify-content: right;
-        border-top: 1px solid $dark-text-color;
+        // border-top: 1px solid $dark-text-color;
+        &--tech {
+          margin-top: 5px;
+          display: grid;
+          grid-auto-rows: 20px;
+          grid-gap: 5px;
+          grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+          p {
+            background-color: $light-gray;
+            font-size: 0.7rem;
+            line-height: 18px;
+            padding: 0 5px;
+            border-radius: 3px;
+          }
+        }
         &--frame {
           background-color: $highlight-text-color;
           width: 220px;
           height: 120%;
           grid-column: 2;
+          grid-row: 1;
           padding: 20px;
-          transform: translate(-20px, -20px);
+          transform: translate(-1px, -20px);
           box-shadow: 4px 6px 16px rgba($dark-text-color, 0.2);
-          // background: url('/scampz.png');
           overflow: hidden;
           background-size: cover;
-          transition: all 0.4s ease-in;
+          // transition: all 0.2s ease-in;
         &-overlay {
           width: 180px;
           height: 220%;
           z-index: 2000;
           grid-column: 2;
+          grid-row: 1;
           background-color: $highlight-text-color;
           transform: translate(-20px, 130px);
           opacity: 0.8;
@@ -112,19 +146,27 @@ export default {
           padding: 10px 40px 10px 0px;
         }
         &--list {
-          // margin-left: 10px;
-          padding-top: 10px;
+          // padding-top: 10px;
+          transform: translateX(-20px);
+          width: 120%;
+          grid-column: 3;
+          grid-row: 1;
           li {
-            height: 50px;
+            padding: 5px 5px;
             cursor: pointer;
+            transition: all 0.3s ease-in;
           }
+            .active {
+              background-color: $mid-gray;
+            }
         }
       }
       &__buttons {
         grid-column: 2;
         margin-left: 50%;
         transform: translateX(-50%);
-        color: white;
+        visibility: hidden;
+        // color: white;
       }
     }
   }

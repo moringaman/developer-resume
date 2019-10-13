@@ -1,5 +1,5 @@
 <template>
-  <div id="skills">
+  <!-- <div id="skills">
     <h2>skillset</h2>
     <div v-for="skill in skills" :key="skill.name" class="skill">
       <div class="skill-name">
@@ -7,7 +7,11 @@
       </div>
       <div class="skill-line" />
       <div class="skill-line-bar" :style="{ width: skill.value + '%' }" />
-      <!-- <p>{{ skill.value + '%' }}</p> -->
+    </div>
+  </div> -->
+  <div>
+    <div v-for="skill in skills" :key="skill.name">
+      <wx-skill :skill="skill" />
     </div>
   </div>
 </template>
