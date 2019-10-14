@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="section-1" class="container">
-      <div id="excerpt">
+      <div id="excerpt" style="column-count: 2;">
         A javascript developer with over 17 years experience in the tech space. Having performed such roles
         as application packager, network administrator and webmaster and having tought myself javascript
         development, I bring an almost uniqe and broad range of skills and knowledge to the table. I am

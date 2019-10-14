@@ -5,6 +5,9 @@
     </div>
     <div class="skill-line" />
     <div class="skill-line-bar" :style="{ width: skill.value + '%' }" />
+    <p class="light">
+      {{ skill.value }}%
+    </p>
   </div>
 </template>
 

@@ -1,9 +1,9 @@
 <template>
   <div id="experience">
-    <div class="dot dot-active" />
+    <wx-dot />
     <h2>work experience</h2>
     <div class="experience-item">
-      <div class="dot" />
+      <wx-dot />
       <p class="jobtitle">
         Lead Javascript developer
       </p>
@@ -20,7 +20,7 @@
       </p>
     </div>
     <div class="experience-item">
-      <div class="dot" />
+      <wx-dot />
       <p class="jobtitle">
         Webmaster & Web designer
       </p>
@@ -37,7 +37,7 @@
       </p>
     </div>
     <div class="experience-item">
-      <div class="dot" />
+      <wx-dot />
       <p class="jobtitle">
         Network Administrator
       </p>
@@ -54,7 +54,7 @@
       </p>
     </div>
     <div class="experience-item">
-      <div class="dot" />
+      <wx-dot />
       <p class="jobtitle">
         Software Packager / Desktop Specialist
       </p>

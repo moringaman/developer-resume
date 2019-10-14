@@ -35,7 +35,10 @@
               :class="{active: index == selected}"
               @click="selected = index"
             >
-              <p style="color: white">
+              <p
+                :class="{highlight: index == selected}"
+                style="color: white"
+              >
                 {{ project.title }}
               </p>
             </li>
@@ -63,6 +66,32 @@ export default {
       ],
       selected: 0
     }
+  },
+  watch: {
+    selected (val) {
+      if (val === 5) {
+        const vm = this
+        setTimeout(() => {
+          vm.cycle()
+        }, 3000)
+      }
+    }
+  },
+  created () {
+    this.cycle()
+  },
+  methods: {
+    cycle () {
+      const vm = this
+      this.projects.forEach(function (item, index, array) {
+        // set a timeout so each second one button gets clicked
+        setTimeout((function (index) {
+          return function () {
+            vm.selected = index
+          }
+        }(index)), (3000 * index))
+      })
+    }
   }
 }
 </script>
@@ -70,6 +99,10 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/scss/main.scss';
   #project-work {
+    .highlight {
+      transition: all 0.3s ease-in;
+      color: $highlight-text-color !important;
+    }
     margin-top: 120px;
     // overflow: hidden;
     width: 100%;
@@ -166,6 +199,7 @@ export default {
             transition: all 0.3s ease-in;
           }
             .active {
+              color: $highlight-text-color !important;
               background-color: $mid-gray;
             }
         }
