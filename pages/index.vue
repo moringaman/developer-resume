@@ -10,9 +10,9 @@
       </div>
       <div id="left-column">
         <div id="left-column-content">
+          <wx-skillset :skills="skills" />
           <wx-contact />
           <wx-education />
-          <wx-skillset :skills="skills" />
         </div>
       </div>
       <div id="right-column">

@@ -20,26 +20,23 @@ export default {
   },
   data () {
     return {
-      skillValueAccumulator: 0
+      skillValueAccumulator: 0,
+      skillLevel: this.skill.value
     }
   },
-  mounted () {
-    this.moveBar(1000, this.skill.value, this.skillValueAccumulator)
+  created () {
+    this.skill.value = 0
+    this.moveBar()
   },
   methods: {
-    moveBar (interval, originalVal, current) {
-      this.skill.value = current
-      if (this.skill.value === originalVal) {
-        return
-      }
+    moveBar () {
+      let interval = 8
       setInterval(() => {
-        if (this.skill.value < originalVal) {
+        if (this.skill.value < this.skillLevel) {
           this.skill.value++
-          current++
+          interval--
         }
       }, interval)
-      console.log(current, originalVal, this.skill.value)
-      this.moveBar(interval -= 10, originalVal, current)
     }
   }
 }

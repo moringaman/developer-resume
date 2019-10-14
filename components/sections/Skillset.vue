@@ -1,15 +1,6 @@
 <template>
-  <!-- <div id="skills">
+  <div id="skillset">
     <h2>skillset</h2>
-    <div v-for="skill in skills" :key="skill.name" class="skill">
-      <div class="skill-name">
-        {{ skill.name }}
-      </div>
-      <div class="skill-line" />
-      <div class="skill-line-bar" :style="{ width: skill.value + '%' }" />
-    </div>
-  </div> -->
-  <div>
     <div v-for="skill in skills" :key="skill.name">
       <wx-skill :skill="skill" />
     </div>
@@ -32,6 +23,9 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/scss/main.scss';
+#skillset {
+  margin-bottom: 100px;
+}
   .skill {
     display: grid;
     -webkit-display: grid;

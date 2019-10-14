@@ -20,9 +20,11 @@
         </div>
         <div class="project-item__left--description" />
         <div class="project-item__left--frame" :style="{'background-image': 'url(/'+ projects[selected].thumb + ')'}">
-          <div class="project-item__left--frame-overlay">
-            {{ projects[selected].desc }}
-          </div>
+          <a :href="projects[selected].url" target="_blank">
+            <div class="project-item__left--frame-overlay">
+              {{ projects[selected].desc }}
+            </div>
+          </a>
           <!-- <img src="/scampz.png" alt=""> -->
         </div>
         <div class="project-item__left--list">
@@ -52,12 +54,12 @@ export default {
   data () {
     return {
       projects: [
-        { title: 'CDN Desktop', url: 'http://cadence-desktop.com', thumb: 'cdndesktop.png', desc: 'A desktop app written in Vue and Electron', tech: [ 'html', 'javascript', 'vuejs', 'nodejs', 'electron', 'firebase', 'sass', 'couchdb' ] },
-        { title: 'Scampz music', url: 'http://scampz-music.herokuapp.com', thumb: 'scampz.png', desc: 'A progressive mobile app showcasing an artists music', tech: [ 'nuxtjs', 'sass', 'pwa' ] },
-        { title: 'Onset travel', url: 'http://onset-travel-client.herokuapp.com', thumb: 'onset.png', desc: 'A travel website with weather and qoute calculator', tech: [ 'vuejs', 'nodejs', 'sass', 'rest' ] },
-        { title: 'CDN-Desktop Website', url: 'http://cadence-desktop.com', thumb: 'scampz.png', desc: 'App support & sales Website with Stripe subscriptions', tech: [ 'nuxt', 'nodejs', 'sass', 'rest', 'firebase' ] },
-        { title: 'Video Commercial', url: 'http://cadence-desktop.com', thumb: 'scampz.png', desc: 'Promotional video & app showcase with voiceover', tech: ['video', 'voice', 'kdenlive', 'handbreak'] },
-        { title: 'Q-DSK Mobile', url: 'http://cadence-desktop.com', thumb: 'Q-DSK2.png', desc: 'A GeoApp made with Vuejs + Quasar + Cordova' }
+        { title: 'CDN Desktop', url: 'http://cadence-desktop.com', thumb: 'cdndesktop.png', desc: 'A desktop app written in Vue and Electron', tech: [ 'html', 'javascript', 'vuejs', 'nodejs', 'electron', 'firebase', 'sass', 'couchdb', 'REST' ] },
+        { title: 'Scampz music', url: 'http://scampz-music.herokuapp.com', thumb: 'scampz.png', desc: 'A progressive mobile app showcasing an artists music', tech: [ 'html', 'javascript', 'nuxtjs', 'sass', 'pwa' ] },
+        { title: 'Onset travel', url: 'http://onset-travel-client.herokuapp.com', thumb: 'onset.png', desc: 'A travel website with weather and qoute calculator', tech: [ 'html', 'javascript', 'vuejs', 'nodejs', 'sass', 'REST' ] },
+        { title: 'CDN-Desktop Website', url: 'http://cadence-desktop.com', thumb: 'cdnweb.png', desc: 'App support & sales Website with Stripe subscriptions', tech: [ 'html', 'javascript', 'nuxt', 'nodejs', 'sass', 'REST', 'firebase', 'Stripe API' ] },
+        { title: 'Video Commercial', url: 'http://cadence-desktop.com', thumb: 'video.png', desc: 'Promotional video & app showcase with voiceover', tech: ['video', 'voice', 'kdenlive', 'handbreak'] },
+        { title: 'Q-DSK Mobile', url: 'http://cadence-desktop.com', thumb: 'Q-DSK2.png', desc: 'A GeoApp made with Vuejs + Quasar + Cordova', tech: [ 'html', 'javascript', 'Vuejs', 'Cordova', 'Quasar', 'Phonegap', 'Firebase' ] }
       ],
       selected: 0
     }
@@ -92,22 +94,29 @@ export default {
         transform: translateY(-250px);
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: 2fr 0.8fr 2.4fr;
+        grid-template-columns: 2fr 1fr 2.4fr;
         grid-template-rows: 200px 50px;
         justify-content: right;
         // border-top: 1px solid $dark-text-color;
+        transition: all 0.3s ease-in;
         &--tech {
           margin-top: 5px;
-          display: grid;
-          grid-auto-rows: 20px;
-          grid-gap: 5px;
-          grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          align-content: top;
+          // display: grid;
+          // grid-auto-rows: 20px;
+          // grid-gap: 5px;
+          // grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
           p {
             background-color: $light-gray;
-            font-size: 0.7rem;
-            line-height: 18px;
-            padding: 0 5px;
+            // font-size: 0.7rem;
+            line-height: 28px;
+            padding: 0 8px;
             border-radius: 3px;
+            margin: 5px;
+            // height: 20px;
           }
         }
         &--frame {
