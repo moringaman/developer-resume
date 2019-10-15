@@ -26,7 +26,7 @@ export default {
     handleScroll () {
       const YPos = this.yPos
       const windowY = window.scrollY
-      if ((YPos - windowY < 200) && (YPos - windowY > 50)) {
+      if ((YPos - windowY < 200) && (YPos - windowY > 15)) {
         this.active = true
       } else {
         this.active = false

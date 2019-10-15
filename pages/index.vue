@@ -22,6 +22,7 @@
         </div>
       </div>
     </div>
+    <wx-footer />
   </div>
 </template>
 
