@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <header class="header">
+      <wx-socialicons />
       <div id="overlay" />
       <div class="container">
         <div id="developer-info">
@@ -14,12 +15,23 @@
         </div>
       </div>
     </header>
+    <!-- <a href="https://github.com/moringaman" target="_blank">
+      <img id="github" src="github-brands.svg" alt="github">
+    </a> -->
   </div>
 </template>
 
 <style lang="scss" scoped>
 
 @import '../assets/scss/main.scss';
+// #github {
+//   position: absolute;
+//   width: 40px;
+//   top: 20px;
+//   right: 20px;
+//   z-index: 9000;
+//   cursor: pointer;
+// }
 .container {
   /* margin: 0 auto; */
   /* min-height: 100vh; */
@@ -27,13 +39,16 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  // overflow-X: hidden;
   /* margin-top: -50px; */
 }
 
 .header {
   background: url(/mountains.jpg);
-  background-size: 100%;
-  background-position: center 30%;
+  background-size: cover;
+  background-position: center 200%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   width: 100%;
   min-height: 300px;
   margin-top: 0px;

@@ -72,6 +72,18 @@ export default {
         {
           name: 'docker',
           value: 56
+        },
+        {
+          name: 'Photoshop',
+          value: 89
+        },
+        {
+          name: 'figma',
+          value: 76
+        },
+        {
+          name: 'git',
+          value: 89
         }
       ]
     }
@@ -81,11 +93,9 @@ export default {
 
 <style lang="scss">
 @import '../assets/scss/main.scss';
-
 #section-1 {
   display: grid;
   grid-template-columns:  3.5fr 6.5fr;
-  // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   @media screen and (max-width: 1200px) {
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   }

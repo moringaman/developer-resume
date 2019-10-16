@@ -25,7 +25,7 @@
 <style lang="scss" scoped>
 @import '../../assets/scss/main.scss';
   #education {
-    height: 400px;
+    height: 600px;
     .education-venue {
       margin-top: 50px;
     }

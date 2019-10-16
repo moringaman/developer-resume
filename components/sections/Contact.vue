@@ -3,7 +3,7 @@
     <h2>CONTACT</h2>
     <div class="contact-method">
       <div class="contact-method__circle">
-        A
+        <fa :icon="['fas', 'map-marker-alt']" />
       </div>
       <div class="contact-method__heading">
         <h3>Address</h3>
@@ -16,7 +16,7 @@
     </div>
     <div class="contact-method">
       <div class="contact-method__circle">
-        @
+        <fa :icon="['fas', 'envelope']" />
       </div>
       <div class="contact-method__heading">
         <h3>Email</h3>
@@ -27,7 +27,7 @@
     </div>
     <div class="contact-method">
       <div class="contact-method__circle">
-        P
+        <fa :icon="['fas', 'phone-alt']" />
       </div>
       <div class="contact-method__heading">
         <h3>Phone</h3>
@@ -38,7 +38,7 @@
     </div>
     <div class="contact-method">
       <div class="contact-method__circle">
-        W
+        <fa :icon="['fas', 'laptop-code']" />
       </div>
       <div class="contact-method__heading">
         <h3>Website</h3>

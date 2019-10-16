@@ -23,6 +23,11 @@
           <a :href="projects[selected].url" target="_blank">
             <div class="project-item__left--frame-overlay">
               {{ projects[selected].desc }}
+              <div id="link">
+                <fa
+                  :icon="['fas', 'external-link-alt']"
+                />
+              </div>
             </div>
           </a>
           <!-- <img src="/scampz.png" alt=""> -->
@@ -62,14 +67,15 @@ export default {
         { title: 'Onset travel', url: 'http://onset-travel-client.herokuapp.com', thumb: 'onset.png', desc: 'A travel website with weather and qoute calculator', tech: [ 'html', 'javascript', 'vuejs', 'nodejs', 'sass', 'REST' ] },
         { title: 'CDN-Desktop Website', url: 'http://cadence-desktop.com', thumb: 'cdnweb.png', desc: 'App support & sales Website with Stripe subscriptions', tech: [ 'html', 'javascript', 'nuxt', 'nodejs', 'sass', 'REST', 'firebase', 'Stripe API' ] },
         { title: 'Video Commercial', url: 'http://cadence-desktop.com', thumb: 'video.png', desc: 'Promotional video & app showcase with voiceover', tech: ['video', 'voice', 'kdenlive', 'handbreak'] },
-        { title: 'Q-DSK Mobile', url: 'http://cadence-desktop.com', thumb: 'Q-DSK2.png', desc: 'A GeoApp made with Vuejs + Quasar + Cordova', tech: [ 'html', 'javascript', 'Vuejs', 'Cordova', 'Quasar', 'Phonegap', 'Firebase' ] }
+        { title: 'Q-DSK Mobile', url: 'http://cadence-desktop.com', thumb: 'Q-DSK2.png', desc: 'A GeoApp made with Vuejs + Quasar + Cordova', tech: [ 'html', 'javascript', 'Vuejs', 'Cordova', 'Quasar', 'Phonegap', 'Firebase' ] },
+        { title: 'AFK Kickboxing Website', url: 'http://afk-kickboxing.herokuapp.com', thumb: 'afk.png', desc: 'Martial Arts website, with fancy graphics', tech: [ 'html', 'javascript', 'Vuejs', 'pwa', 'sass', 'gimp' ] }
       ],
       selected: 0
     }
   },
   watch: {
     selected (val) {
-      if (val === 5) {
+      if (val === 6) {
         const vm = this
         setTimeout(() => {
           vm.cycle()
@@ -145,7 +151,7 @@ export default {
           p {
             background-color: $light-gray;
             // font-size: 0.7rem;
-            line-height: 28px;
+            line-height: 27px;
             padding: 0 8px;
             border-radius: 3px;
             margin: 5px;
@@ -178,6 +184,21 @@ export default {
           color: #fff;
           font-weight: 600;
           cursor: pointer;
+          &:hover #link {
+            opacity: 0.9;
+          }
+          #link {
+            // transform: translateY(-100px);
+            left: 189px;
+            top: -150px;
+            z-index: 6000;
+            font-size: 1.2rem;
+            opacity: 0.1;
+            padding: 0px 5px;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: opacity 0.3s ease-in-out ;
+          }
           &:hover {
             opacity: 1;
             // transform: translate(-5px, 50px) rotate(40deg);
