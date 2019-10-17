@@ -109,6 +109,9 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/scss/main.scss';
   #project-work {
+    @media screen and (max-width: 414px) {
+      transform: translateY(350px) !important;
+    }
     @media screen and (max-width: 743px) {
       transform: translateY(-280px);
     }

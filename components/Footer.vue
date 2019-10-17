@@ -26,6 +26,11 @@
    color: $highlight-text-color;
    padding: 30px 80px;
    transform: translateY(-35px);
+    @media screen and (max-width: 414px) {
+      transform: translateY(460px) !important;
+      padding: 20px 20px;
+      height: 300px;
+    }
     @media screen and (max-width: 537px) and (min-width: 10px) {
       // transform: translateY(1500px);
       position: absolute;

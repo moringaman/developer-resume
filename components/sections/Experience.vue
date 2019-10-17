@@ -86,6 +86,10 @@
 <style lang="scss" scoped>
 @import '../../assets/scss/main.scss';
   #experience {
+    @media screen and (max-width: 414px) {
+      transform: translateY(450px) !important;
+      text-align: center;
+    }
     @media screen and (max-width: 743px) {
       transform: translateY(-280px);
     }

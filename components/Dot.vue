@@ -46,6 +46,9 @@ export default {
       border: 4px solid $dark-text-color;
       transform: translate(-91px, 31px);
       display: inline-block;
+    @media screen and (max-width: 414px) {
+      visibility: hidden !important;
+    }
       &-active {
         background-color: $highlight-text-color;
         border: 4px solid $highlight-text-color;

@@ -54,6 +54,10 @@
 #contact {
   margin-bottom: 130px;
   margin-top: 120px;
+    @media screen and (max-width: 414px) {
+      transform: translateY(460px) !important;
+      text-align: center;
+    }
     @media screen and (max-width: 743px) {
       transform: translateY(190px);
     }
@@ -63,6 +67,15 @@
   grid-gap: 50px;
   margin-top: 60px;
   grid-template-columns: 90px 200px;
+    @media screen and (max-width: 414px) {
+      margin: 40px auto;
+      text-align: center;
+      grid-template-columns: 300px;
+      grid-gap: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+      // margin-top: 200px;
   &__circle {
     width: 90px;
     height: 90px;
@@ -73,7 +86,9 @@
     line-height: 90px;
     font-weight: 700;
     font-size: 2rem;
-    // padding: auto auto;
+    @media screen and (max-width: 414px) {
+      margin: 0px auto;
+    }
   }
 }
 </style>

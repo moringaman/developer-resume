@@ -25,44 +25,16 @@ export default {
 @import '../../assets/scss/main.scss';
 #skillset {
   // margin-bottom: 100px;
-    @media screen and (max-width: 375px) {
-      transform: translateY(260px) !important;
+    @media screen and (max-width: 414px) {
+      transform: translateY(520px) !important;
+      margin: 200px auto;
+      text-align: center;
     }
-    @media screen and (max-width: 537px) and (min-width: 375px) {
-      transform: translateY(220px) !important;
+    @media screen and (max-width: 537px) and (min-width: 414px) {
+      transform: translateY(220px);
     }
-    @media screen and (max-width: 743px) {
+    @media screen and (max-width: 743px) and (min-width: 537px) {
       transform: translateY(80px);
     }
 }
-  .skill {
-    display: grid;
-    -webkit-display: grid;
-    width: 100%;
-    grid-template-columns: 80px 1fr 50px;
-    // grid-gap: 10px;
-    margin-top: -8px;
-    align-items: center;
-    &-line {
-      grid-column: 2;
-      width: 100%;
-      height: 4px;
-      // margin-top: 2px;
-      background-color: $mid-gray;
-      &-bar {
-        // width: 70%;
-        background-color: $highlight-text-color;
-        height: 4px;
-        transform: translateY(-14px);
-        grid-column: 2;
-      }
-    }
-    p {
-      grid-column: 3;
-      grid-row: 1;
-    }
-    &-name {
-      grid-column: 1;
-    }
-  }
 </style>

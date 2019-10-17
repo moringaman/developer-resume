@@ -51,10 +51,13 @@ export default {
     display: grid;
     -webkit-display: grid;
     width: 100%;
-    grid-template-columns: 80px 1fr 50px;
+    grid-template-columns: 85px 1fr 50px;
     // grid-gap: 10px;
     margin-top: -8px;
     align-items: center;
+    @media screen and (max-width: 414px) {
+      text-align: left;
+    }
     &-line {
       grid-column: 2;
       width: 100%;
