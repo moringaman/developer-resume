@@ -53,6 +53,7 @@
 @import '../../assets/scss/main.scss';
 #contact {
   margin-bottom: 130px;
+  margin-top: 120px;
     @media screen and (max-width: 743px) {
       transform: translateY(190px);
     }
