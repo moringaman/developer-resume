@@ -44,9 +44,7 @@ export default {
       // const YPos = this.yPos
       const windowY = window.scrollY
       this.yPos = windowY
-      console.log(windowY)
       if (windowY > 280) {
-        console.log(this.active)
         this.active = true
       } else {
         this.active = false
@@ -61,7 +59,6 @@ export default {
 #top-nav {
   margin-top: 0px;
   width: 100%;
-  // max-width:1345px;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -74,13 +71,13 @@ export default {
     border-radius: 5px;
     margin-right: 20px;
     transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
   }
 }
 #github {
   position: relative;
   width: 40px;
   margin-top: 20px;
-  // margin-left: 90%;
   cursor: pointer;
 }
 

@@ -3,14 +3,16 @@
     id="footer"
     class="container"
   >
-    <button id="hire-me">
-      HIRE ME
-    </button>
+    <a href="mailto: rob@webnostix.co.uk?subject=employment offer from a cool company">
+      <button id="hire-me">
+        HIRE ME
+      </button>
+    </a>
     <p
       id="available"
       class="job-title"
     >
-      Available for both permanent and contract roles
+      I'm currently available for both permanent and contract roles
     </p>
   </div>
 </template>
@@ -20,7 +22,7 @@
  #footer {
    height: 200px;
    width: 100%;
-   background-color: $dark-text-color;
+   background-color: #466576;
    color: $highlight-text-color;
    padding: 30px 80px;
     #available {
@@ -28,13 +30,13 @@
       margin-left: 50%;
       display: inline-block;
       transform: translateY(-40px) translateX(-50%);
-      color: $highlight-text-color;
+      color: #ffffff;
     }
  }
  #hire-me {
    position: relative;
    margin: 50px 50%;
-   transform: translateX(-50%);
+   transform: translate(-50%, -10px);
    background-color: $highlight-text-color;
    display: inline-block;
    width: 200px;

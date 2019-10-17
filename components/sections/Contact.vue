@@ -6,11 +6,10 @@
         <fa :icon="['fas', 'map-marker-alt']" />
       </div>
       <div class="contact-method__heading">
-        <h3>Address</h3>
+        <h3>Location</h3>
         <p>
-          8b Ringstead Rd<br>
-          Catford London<br>
-          SE6 2BP
+          London<br>
+          England<br>
         </p>
       </div>
     </div>

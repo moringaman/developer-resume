@@ -84,6 +84,10 @@ export default {
         {
           name: 'git',
           value: 89
+        },
+        {
+          name: 'vim',
+          value: 93
         }
       ]
     }
@@ -102,7 +106,7 @@ export default {
 }
 #left-column {
   background-color: $light-gray;
-  height: 2000px;
+  height: 2400px;
 }
  #left-column-content {
    margin-top: 362px;
@@ -129,7 +133,7 @@ export default {
 #right-column {
   // grid-column: 3;
   background-color: white;
-  height: 2000px;
+  height: 2400px;
   width: 100%;
   &-content {
     padding: 0 80px;

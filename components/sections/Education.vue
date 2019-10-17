@@ -17,7 +17,7 @@
       <h3>
         French, History, Economics
       </h3>
-      <p>Richard Huish College (Taunton)</p>
+      <p>Richard Huish College</p>
     </div>
   </div>
 </template>

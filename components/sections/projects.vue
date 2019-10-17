@@ -54,6 +54,10 @@
         </div>
       </div>
     </div>
+    <p id="project-note">
+      The above selection of projects shows my versitility as both a designer and programmer.
+      I am adebt at creating in various styles and to a design brief. Solving a wide range of problems.
+    </p>
   </div>
 </template>
 
@@ -63,7 +67,7 @@ export default {
     return {
       projects: [
         { title: 'CDN Desktop', url: 'http://cadence-desktop.com', thumb: 'cdndesktop.png', desc: 'A desktop app written in Vue and Electron', tech: [ 'html', 'javascript', 'vuejs', 'nodejs', 'electron', 'firebase', 'sass', 'couchdb', 'REST' ] },
-        { title: 'Scampz music', url: 'http://scampz-music.herokuapp.com', thumb: 'scampz.png', desc: 'A progressive mobile app showcasing an artists music', tech: [ 'html', 'javascript', 'nuxtjs', 'sass', 'pwa' ] },
+        { title: 'Scampz music', url: 'http://scampz-music.herokuapp.com', thumb: 'scampz.png', desc: 'A pwa with music player, showcasing a grime artist', tech: [ 'html', 'javascript', 'nuxtjs', 'sass', 'pwa' ] },
         { title: 'Onset travel', url: 'http://onset-travel-client.herokuapp.com', thumb: 'onset.png', desc: 'A travel website with weather and qoute calculator', tech: [ 'html', 'javascript', 'vuejs', 'nodejs', 'sass', 'REST' ] },
         { title: 'CDN-Desktop Website', url: 'http://cadence-desktop.com', thumb: 'cdnweb.png', desc: 'App support & sales Website with Stripe subscriptions', tech: [ 'html', 'javascript', 'nuxt', 'nodejs', 'sass', 'REST', 'firebase', 'Stripe API' ] },
         { title: 'Video Commercial', url: 'http://cadence-desktop.com', thumb: 'video.png', desc: 'Promotional video & app showcase with voiceover', tech: ['video', 'voice', 'kdenlive', 'handbreak'] },
@@ -233,5 +237,8 @@ export default {
         // color: white;
       }
     }
+  }
+  #project-note {
+    transform: translateY(-80px);
   }
 </style>
