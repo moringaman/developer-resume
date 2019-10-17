@@ -15,8 +15,11 @@
           Responsibilites:
         </span>
         Design & Development of corporate identity and websites for clients,
-        consulting on website functionality & UX, Coding and deployment of backend API's
-        as well as front end websites.
+        consulting on website functionality & UX, Creation of wireframes and mockups, Coding and deployment of backend API's
+        as well as front end websites. Deployment of assets to heroku and zeit, management of
+        continuous delivery pipelines and deployment of features and hotfixes. Development
+        of company desktop and mobile apps inluding the new CDN Desktop. Dealing with issues
+        & bugs as well as production of promotional video content.
       </p>
     </div>
     <div class="experience-item">
@@ -83,6 +86,9 @@
 <style lang="scss" scoped>
 @import '../../assets/scss/main.scss';
   #experience {
+    @media screen and (max-width: 743px) {
+      transform: translateY(-280px);
+    }
     .experience-item {
       margin-top: 55px;
     }

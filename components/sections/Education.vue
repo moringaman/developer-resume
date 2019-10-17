@@ -25,7 +25,10 @@
 <style lang="scss" scoped>
 @import '../../assets/scss/main.scss';
   #education {
-    height: 600px;
+    @media screen and (max-width: 743px) {
+      transform: translateY(180px);
+    }
+    height: 780px;
     .education-venue {
       margin-top: 50px;
     }

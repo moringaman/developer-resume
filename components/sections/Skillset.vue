@@ -24,7 +24,16 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/scss/main.scss';
 #skillset {
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
+    @media screen and (max-width: 375px) {
+      transform: translateY(260px) !important;
+    }
+    @media screen and (max-width: 537px) and (min-width: 375px) {
+      transform: translateY(220px) !important;
+    }
+    @media screen and (max-width: 743px) {
+      transform: translateY(80px);
+    }
 }
   .skill {
     display: grid;

@@ -20,17 +20,25 @@
 <style lang="scss" scoped>
 @import '../assets/scss/main.scss';
  #footer {
-   height: 200px;
+   height: 240px;
    width: 100%;
    background-color: #466576;
    color: $highlight-text-color;
    padding: 30px 80px;
+   transform: translateY(-35px);
+    @media screen and (max-width: 537px) and (min-width: 10px) {
+      // transform: translateY(1500px);
+      position: absolute;
+      top: 6500px;
+      margin: auto auto;
+    }
     #available {
       margin-top: 10px;
       margin-left: 50%;
       display: inline-block;
       transform: translateY(-40px) translateX(-50%);
       color: #ffffff;
+      text-align: center;
     }
  }
  #hire-me {

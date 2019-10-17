@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="section-1" class="container">
-      <div id="excerpt" style="column-count: 2;">
+      <div id="excerpt">
         A javascript developer with over 17 years experience in the tech space. Having performed such roles
         as application packager, network administrator and webmaster and having tought myself javascript
         development, I bring an almost uniqe and broad range of skills and knowledge to the table. I am
@@ -107,6 +107,18 @@ export default {
 #left-column {
   background-color: $light-gray;
   height: 2400px;
+    @media screen and (max-width: 1407px) {
+      height: 2700px;
+    }
+    @media screen and (max-width: 743px) {
+      height: 2100px;
+    }
+    @media screen and (max-width: 1205px) and (min-width: 743px) {
+      height: 3300px;
+    }
+    @media screen and (max-width: 954px) and (min-width: 743px) {
+      height: 3800px;
+    }
 }
  #left-column-content {
    margin-top: 362px;
@@ -128,6 +140,10 @@ export default {
    line-height: 1.9rem;
    font-weight: 400;
    color: $dark-text-color;
+   column-count: 2;
+    @media screen and (max-width: 537px) and (min-width: 10px) {
+      column-count: 1;
+    }
  }
 
 #right-column {
@@ -135,6 +151,21 @@ export default {
   background-color: white;
   height: 2400px;
   width: 100%;
+    @media screen and (max-width: 357px) {
+      height: 4900px;
+    }
+    @media screen and (min-width: 358px) and (max-width: 743px) {
+      height: 2200px !important;
+    }
+    @media screen and (max-width: 1407px) {
+      height: 2700px;
+    }
+    @media screen and (max-width: 1205px) and (min-width: 743px) {
+      height: 3300px;
+    }
+    @media screen and (max-width: 954px) and (min-width: 743px) {
+      height: 3800px;
+    }
   &-content {
     padding: 0 80px;
     margin-top: 330px;

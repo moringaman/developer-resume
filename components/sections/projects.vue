@@ -109,6 +109,12 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/scss/main.scss';
   #project-work {
+    @media screen and (max-width: 743px) {
+      transform: translateY(-280px);
+    }
+    @media screen and (max-width: 1407) {
+      height: 700px;
+    }
     .highlight {
       transition: all 0.3s ease-in;
       color: $highlight-text-color !important;

@@ -53,6 +53,9 @@
 @import '../../assets/scss/main.scss';
 #contact {
   margin-bottom: 130px;
+    @media screen and (max-width: 743px) {
+      transform: translateY(190px);
+    }
 }
 .contact-method {
   display: grid;
