@@ -82,6 +82,10 @@
   transform: translateY(4px);
   font-size: 4rem;
   font-weight: 700;
+    @media screen and (max-width: 414px) {
+      font-size: 1.8rem;
+    transform: translateY(43px);
+    }
 }
 .developer {
   grid-column: 2;
@@ -89,6 +93,13 @@
   color: #0E4C6F;
   font-weight: 500;
   font-size: 2rem;
+    @media screen and (max-width: 414px) {
+      font-size: 1rem;
+      transform: translateY(-75px);
+      width: 200px;
+      text-align: left !important;
+      font-weight: 600;
+    }
 }
 
 .header-avatar-frame {

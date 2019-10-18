@@ -27,12 +27,13 @@
    padding: 30px 80px;
    transform: translateY(-35px);
     @media screen and (max-width: 414px) {
-      transform: translateY(460px) !important;
+      transform: translateY(2110px) !important;
       padding: 20px 20px;
       height: 300px;
     }
-    @media screen and (max-width: 537px) and (min-width: 10px) {
-      // transform: translateY(1500px);
+    @media screen and (max-width: 537px) and (min-width: 414px) {
+      transform: translateY(1500px) !important;
+      height: 300px;
       position: absolute;
       top: 6500px;
       margin: auto auto;

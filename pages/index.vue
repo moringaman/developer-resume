@@ -151,6 +151,9 @@ export default {
   background-color: white;
   height: 2400px;
   width: 100%;
+    @media screen and (max-width) and (min-width: 357px) {
+      height: 2400px;
+    }
     @media screen and (max-width: 357px) {
       height: 4900px;
     }
