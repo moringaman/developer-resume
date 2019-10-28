@@ -10,7 +10,7 @@
             ROB DUFFUS
           </div>
           <div class="developer">
-            Full Stack Javascript Developer
+            Full Stack Software Engineer
           </div>
         </div>
       </div>
