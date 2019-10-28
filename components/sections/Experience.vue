@@ -4,6 +4,9 @@
     <h2>work experience</h2>
     <div class="experience-item">
       <wx-dot />
+      <p class="date light">
+        2017 -
+      </p>
       <p class="jobtitle">
         Lead Javascript developer
       </p>
@@ -24,6 +27,7 @@
     </div>
     <div class="experience-item">
       <wx-dot />
+      <span class="date light">Sept 2012 - Apr 2017</span>
       <p class="jobtitle">
         Webmaster & Web designer
       </p>
@@ -43,6 +47,7 @@
     </div>
     <div class="experience-item">
       <wx-dot />
+      <span class="date light">Jul 2010 - Sept 2012</span>
       <p class="jobtitle">
         Network Administrator
       </p>
@@ -62,6 +67,7 @@
     </div>
     <div class="experience-item">
       <wx-dot />
+      <span class="date light">Jan 2009 - Apr 2010</span>
       <p class="jobtitle">
         Software Packager / Desktop Specialist
       </p>
@@ -85,7 +91,10 @@
 
 <style lang="scss" scoped>
 @import '../../assets/scss/main.scss';
-  #experience {
+  .experience-item {
+    &:not(:first-child) {
+      transform: translateY(20px);
+    }
     @media screen and (max-width: 414px) {
       transform: translateY(450px) !important;
       text-align: center;
@@ -95,19 +104,6 @@
     }
     .experience-item {
       margin-top: 55px;
-    }
-    .dot {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background-color: white;
-      border: 4px solid $dark-text-color;
-      transform: translate(-91px, 31px);
-      display: inline-block;
-      &-active {
-        background-color: $highlight-text-color;
-        border: 4px solid $highlight-text-color;
-      }
     }
   }
 </style>
