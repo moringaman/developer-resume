@@ -42,7 +42,7 @@
       <div class="contact-method__heading">
         <h3>Website</h3>
         <p>
-         developer-resume.leon4.now.sh
+         http://bit.ly/robduffus
         </p>
       </div>
     </div>
