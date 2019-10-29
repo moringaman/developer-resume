@@ -54,7 +54,4 @@ export default {
         border: 4px solid $highlight-text-color;
       }
     }
-    #dot .dot:not(:first-child) {
-      transform: translate(-91px, 41px);
-    }
 </style>

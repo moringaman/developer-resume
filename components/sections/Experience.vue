@@ -92,9 +92,9 @@
 <style lang="scss" scoped>
 @import '../../assets/scss/main.scss';
   .experience-item {
-    &:not(:first-child) {
-      transform: translateY(20px);
-    }
+    // &:not(:first-child) {
+    //   transform: translateY(20px);
+    // }
     @media screen and (max-width: 414px) {
       transform: translateY(450px) !important;
       text-align: center;
