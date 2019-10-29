@@ -12,6 +12,14 @@ body {
   background-color: $mid-gray;
 }
 
+a {
+  text-decoration: none;
+  color: $light-text-color;
+  &:hover {
+    color: $highlight-text-color;
+  }
+}
+
 // Typography
 h1 {
   color: white;

@@ -42,7 +42,9 @@
       <div class="contact-method__heading">
         <h3>Website</h3>
         <p>
-          http://bit.ly/robduffus
+          <a href="http://bit.ly/robduffus">
+            http://bit.ly/robduffus
+          </a>
         </p>
       </div>
     </div>
