@@ -50,8 +50,12 @@ export default {
           value: 76
         },
         {
-          name: 'vuejs',
+          name: 'React',
           value: 91
+        },
+        {
+          name: 'vuejs',
+          value: 85
         },
         {
           name: 'solidity',
