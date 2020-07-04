@@ -110,7 +110,7 @@ export default {
 }
 #left-column {
   background-color: $light-gray;
-  height: 2400px;
+  height: 2600px;
     @media screen and (max-width: 1407px) {
       height: 2700px;
     }
@@ -153,7 +153,7 @@ export default {
 #right-column {
   // grid-column: 3;
   background-color: white;
-  height: 2400px;
+  height: 2600px;
   width: 100%;
     @media screen and (max-width) and (min-width: 357px) {
       height: 2400px;

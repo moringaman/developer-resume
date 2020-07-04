@@ -5,7 +5,31 @@
     <div class="experience-item">
       <wx-dot />
       <p class="date light">
-        2017 -
+        2020 -
+      </p>
+      <p class="jobtitle">
+        React / React-Native Developer
+      </p>
+      <p class="company">
+        Xanda Ltd
+      </p>
+      <p>
+        <span style="font-weight: bold">
+          Responsibilites:
+        </span>
+        Front end development of React and React Native apps working in close
+        contact with back-end PHP developers and UI/UX Designers. Required to
+        be a team player contributing to application design and architecture.
+        A high ability to problem solve is required in my current role including
+        researching the integration of in house and third party Api's into projects
+        and presentation of data to end users. The role also requires proficiency in
+        test driven development using Mocha with Chia Assertions.
+      </p>
+    </div>
+    <div class="experience-item">
+      <wx-dot />
+      <p class="date light">
+        2017 - 2020
       </p>
       <p class="jobtitle">
         Lead Javascript developer
