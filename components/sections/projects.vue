@@ -66,12 +66,13 @@ export default {
   data () {
     return {
       projects: [
-        { title: 'CDN Desktop', url: 'http://cadence-desktop.com', thumb: 'cdndesktop.png', desc: 'A desktop app written in Vue and Electron', tech: [ 'html', 'javascript', 'vuejs', 'nodejs', 'electron', 'firebase', 'sass', 'couchdb', 'REST' ] },
+        { title: 'Webnostix Website', url: 'http://webnostix.co.uk', thumb: 'webnostix.png', desc: 'Webnostix webdesign site in Nuxt', tech: [ 'html', 'javascript', 'vuejs', 'nodejs', 'sass', 'mongodb', 'REST' ] },
+        { title: 'CDN Desktop', url: 'http://cdn-desktop.co.uk', thumb: 'cdndesktop.png', desc: 'A desktop app written in Vue and Electron', tech: [ 'html', 'javascript', 'vuejs', 'nodejs', 'electron', 'firebase', 'sass', 'couchdb', 'REST' ] },
         { title: 'Scampz music', url: 'http://scampz-music.herokuapp.com', thumb: 'scampz.png', desc: 'A pwa with music player, showcasing a grime artist', tech: [ 'html', 'javascript', 'nuxtjs', 'sass', 'pwa' ] },
         { title: 'Onset travel', url: 'http://onset-travel-client.herokuapp.com', thumb: 'onset.png', desc: 'A travel website with weather and qoute calculator', tech: [ 'html', 'javascript', 'vuejs', 'nodejs', 'sass', 'REST' ] },
-        { title: 'CDN-Desktop Website', url: 'http://cadence-desktop.com', thumb: 'cdnweb.png', desc: 'App support & sales Website with Stripe subscriptions', tech: [ 'html', 'javascript', 'nuxt', 'nodejs', 'sass', 'REST', 'firebase', 'Stripe API' ] },
-        { title: 'Video Commercial', url: 'http://cadence-desktop.com', thumb: 'video.png', desc: 'Promotional video & app showcase with voiceover', tech: ['video', 'voice', 'kdenlive', 'handbreak'] },
-        { title: 'Q-DSK Mobile', url: 'http://cadence-desktop.com', thumb: 'Q-DSK2.png', desc: 'A GeoApp made with Vuejs + Quasar + Cordova', tech: [ 'html', 'javascript', 'Vuejs', 'Cordova', 'Quasar', 'Phonegap', 'Firebase' ] },
+        { title: 'CDN-Desktop Website', url: 'http://cdn-desktop.co.uk', thumb: 'cdnweb.png', desc: 'App support & sales Website with Stripe subscriptions', tech: [ 'html', 'javascript', 'nuxt', 'nodejs', 'sass', 'REST', 'firebase', 'Stripe API' ] },
+        { title: 'Video Commercial', url: 'http://cdn-desktop.co.uk', thumb: 'video.png', desc: 'Promotional video & app showcase with voiceover', tech: ['video', 'voice', 'kdenlive', 'handbreak'] },
+        { title: 'Q-DSK Mobile', url: 'http://cdn-desktop.co.uk', thumb: 'Q-DSK2.png', desc: 'A GeoApp made with Vuejs + Quasar + Cordova', tech: [ 'html', 'javascript', 'Vuejs', 'Cordova', 'Quasar', 'Phonegap', 'Firebase' ] },
         { title: 'AFK Kickboxing Website', url: 'http://afk-kickboxing.herokuapp.com', thumb: 'afk.png', desc: 'Martial Arts website, with fancy graphics', tech: [ 'html', 'javascript', 'Vuejs', 'pwa', 'sass', 'gimp' ] }
       ],
       selected: 0
@@ -79,7 +80,7 @@ export default {
   },
   watch: {
     selected (val) {
-      if (val === 6) {
+      if (val === 7) {
         const vm = this
         setTimeout(() => {
           vm.cycle()
